@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Nueva cuenta</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">registro</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+
+
+<ion-input label="Usuario" label-placement="floating" fill="solid" placeholder="Escriba aqui" [(ngModel)]="usuario"></ion-input>
+
+<br />
+
+<ion-input label="Contraseña" label-placement="floating" fill="outline" placeholder="Escriba aqui" [(ngModel)]="contrasena"></ion-input>
+
+<ion-button [routerLink]="['/listacomidas']">Registrarse</ion-button>
+</ion-content>
